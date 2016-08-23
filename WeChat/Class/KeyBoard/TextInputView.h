@@ -10,11 +10,10 @@
 
 @protocol TextInputViewDelegate <NSObject>
 
-@optional
-
 // 把输入的字符串传出去
 - (void)textInputFinished:(NSString *)string;
 - (void)textHeight:(CGFloat)height;
+
 @end
 
 @interface TextInputView : UIView

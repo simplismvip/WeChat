@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		040A21281D6C8AE5002E0066 /* JMDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21271D6C8AE5002E0066 /* JMDetailModel.m */; };
+		040A212D1D6CA74B002E0066 /* TextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A212A1D6CA74B002E0066 /* TextInputView.m */; };
+		040A212E1D6CA74B002E0066 /* InputImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A212C1D6CA74B002E0066 /* InputImageView.m */; };
+		040A21411D6CA910002E0066 /* KeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21341D6CA910002E0066 /* KeyBoardView.m */; };
+		040A21421D6CA910002E0066 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21361D6CA910002E0066 /* ListView.m */; };
+		040A21431D6CA910002E0066 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21381D6CA910002E0066 /* Model.m */; };
+		040A21441D6CA910002E0066 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A213A1D6CA910002E0066 /* NSString+Emoji.m */; };
+		040A21451D6CA910002E0066 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A213C1D6CA910002E0066 /* PageView.m */; };
+		040A21461D6CA910002E0066 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A213E1D6CA910002E0066 /* TabBar.m */; };
+		040A21471D6CA910002E0066 /* tabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21401D6CA910002E0066 /* tabBarButton.m */; };
 		0486434C1D5C192900190F72 /* JMMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486434B1D5C192900190F72 /* JMMessageController.m */; };
 		048643BD1D5C249B00190F72 /* QqCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643BC1D5C249B00190F72 /* QqCell.m */; };
 		048643C21D5C24B400190F72 /* QqFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643BF1D5C24B400190F72 /* QqFrameModel.m */; };
 		048643C31D5C24B400190F72 /* QqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643C11D5C24B400190F72 /* QqModel.m */; };
 		048643C61D5C24D700190F72 /* JMMessageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643C51D5C24D700190F72 /* JMMessageTableView.m */; };
-		048643CC1D5C480B00190F72 /* TextInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643CB1D5C480B00190F72 /* TextInputView.m */; };
 		04A9377D1D69714E00DDDB5C /* RecorderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9377C1D69714E00DDDB5C /* RecorderTool.m */; };
 		04A937891D6A05E100DDDB5C /* JMFriendDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A937881D6A05E100DDDB5C /* JMFriendDetailController.m */; };
 		04A9378C1D6A062D00DDDB5C /* JMFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9378B1D6A062D00DDDB5C /* JMFriendCell.m */; };
@@ -459,6 +467,24 @@
 /* Begin PBXFileReference section */
 		040A21261D6C8AE5002E0066 /* JMDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDetailModel.h; sourceTree = "<group>"; };
 		040A21271D6C8AE5002E0066 /* JMDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDetailModel.m; sourceTree = "<group>"; };
+		040A21291D6CA74B002E0066 /* TextInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputView.h; sourceTree = "<group>"; };
+		040A212A1D6CA74B002E0066 /* TextInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputView.m; sourceTree = "<group>"; };
+		040A212B1D6CA74B002E0066 /* InputImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputImageView.h; sourceTree = "<group>"; };
+		040A212C1D6CA74B002E0066 /* InputImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputImageView.m; sourceTree = "<group>"; };
+		040A21331D6CA910002E0066 /* KeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyBoardView.h; sourceTree = "<group>"; };
+		040A21341D6CA910002E0066 /* KeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyBoardView.m; sourceTree = "<group>"; };
+		040A21351D6CA910002E0066 /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
+		040A21361D6CA910002E0066 /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
+		040A21371D6CA910002E0066 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		040A21381D6CA910002E0066 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		040A21391D6CA910002E0066 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		040A213A1D6CA910002E0066 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		040A213B1D6CA910002E0066 /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
+		040A213C1D6CA910002E0066 /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
+		040A213D1D6CA910002E0066 /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
+		040A213E1D6CA910002E0066 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
+		040A213F1D6CA910002E0066 /* tabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabBarButton.h; sourceTree = "<group>"; };
+		040A21401D6CA910002E0066 /* tabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabBarButton.m; sourceTree = "<group>"; };
 		0486434A1D5C192900190F72 /* JMMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMessageController.h; sourceTree = "<group>"; };
 		0486434B1D5C192900190F72 /* JMMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMessageController.m; sourceTree = "<group>"; };
 		048643BB1D5C249B00190F72 /* QqCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QqCell.h; sourceTree = "<group>"; };
@@ -469,8 +495,6 @@
 		048643C11D5C24B400190F72 /* QqModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QqModel.m; sourceTree = "<group>"; };
 		048643C41D5C24D700190F72 /* JMMessageTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMessageTableView.h; sourceTree = "<group>"; };
 		048643C51D5C24D700190F72 /* JMMessageTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMessageTableView.m; sourceTree = "<group>"; };
-		048643CA1D5C480B00190F72 /* TextInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputView.h; sourceTree = "<group>"; };
-		048643CB1D5C480B00190F72 /* TextInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputView.m; sourceTree = "<group>"; };
 		04A9377B1D69714E00DDDB5C /* RecorderTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderTool.h; sourceTree = "<group>"; };
 		04A9377C1D69714E00DDDB5C /* RecorderTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderTool.m; sourceTree = "<group>"; };
 		04A937871D6A05E100DDDB5C /* JMFriendDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFriendDetailController.h; sourceTree = "<group>"; };
@@ -1151,6 +1175,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040A21321D6CA910002E0066 /* KeyBtn */ = {
+			isa = PBXGroup;
+			children = (
+				040A21331D6CA910002E0066 /* KeyBoardView.h */,
+				040A21341D6CA910002E0066 /* KeyBoardView.m */,
+				040A21351D6CA910002E0066 /* ListView.h */,
+				040A21361D6CA910002E0066 /* ListView.m */,
+				040A21371D6CA910002E0066 /* Model.h */,
+				040A21381D6CA910002E0066 /* Model.m */,
+				040A21391D6CA910002E0066 /* NSString+Emoji.h */,
+				040A213A1D6CA910002E0066 /* NSString+Emoji.m */,
+				040A213B1D6CA910002E0066 /* PageView.h */,
+				040A213C1D6CA910002E0066 /* PageView.m */,
+				040A213D1D6CA910002E0066 /* TabBar.h */,
+				040A213E1D6CA910002E0066 /* TabBar.m */,
+				040A213F1D6CA910002E0066 /* tabBarButton.h */,
+				040A21401D6CA910002E0066 /* tabBarButton.m */,
+			);
+			path = KeyBtn;
+			sourceTree = "<group>";
+		};
 		04A937791D69625900DDDB5C /* Record */ = {
 			isa = PBXGroup;
 			children = (
@@ -1163,6 +1208,11 @@
 		04A9377A1D69627A00DDDB5C /* KeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				040A21291D6CA74B002E0066 /* TextInputView.h */,
+				040A212A1D6CA74B002E0066 /* TextInputView.m */,
+				040A212B1D6CA74B002E0066 /* InputImageView.h */,
+				040A212C1D6CA74B002E0066 /* InputImageView.m */,
+				040A21321D6CA910002E0066 /* KeyBtn */,
 			);
 			path = KeyBoard;
 			sourceTree = "<group>";
@@ -1316,8 +1366,6 @@
 		04DB0ADE1D5B2D1300F9EAA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				048643CA1D5C480B00190F72 /* TextInputView.h */,
-				048643CB1D5C480B00190F72 /* TextInputView.m */,
 				048643BB1D5C249B00190F72 /* QqCell.h */,
 				048643BC1D5C249B00190F72 /* QqCell.m */,
 				048643C41D5C24D700190F72 /* JMMessageTableView.h */,
@@ -3141,7 +3189,6 @@
 				345957111C95689500052923 /* MJExtensionConst.m in Sources */,
 				343D316B1C81E6C200D8FD0E /* XMPPvCardTempAdr.m in Sources */,
 				04DB0AA91D5AD78200F9EAA3 /* NSString+Extension.m in Sources */,
-				048643CC1D5C480B00190F72 /* TextInputView.m in Sources */,
 				343D2FCE1C81E69600D8FD0E /* AppDelegate.m in Sources */,
 				34263AFE1C871FFE0068EAA9 /* WCAddViewController.m in Sources */,
 				343D31551C81E6C200D8FD0E /* XMPPLastActivity.m in Sources */,
@@ -3178,9 +3225,12 @@
 				343D31761C81E6C200D8FD0E /* TURNSocket.m in Sources */,
 				34B2C08A1C89D23A009DEED3 /* UIButton+WebCache.m in Sources */,
 				343D31461C81E6C200D8FD0E /* XMPPReconnect.m in Sources */,
+				040A21431D6CA910002E0066 /* Model.m in Sources */,
 				343D31691C81E6C200D8FD0E /* XMPPvCardTempCoreDataStorageObject.m in Sources */,
+				040A21471D6CA910002E0066 /* tabBarButton.m in Sources */,
 				343D316E1C81E6C200D8FD0E /* XMPPvCardTempEmail.m in Sources */,
 				343D318E1C81E6C200D8FD0E /* XMPPBlocking.m in Sources */,
+				040A212D1D6CA74B002E0066 /* TextInputView.m in Sources */,
 				343D31351C81E6C200D8FD0E /* XMPPXFacebookPlatformAuthentication.m in Sources */,
 				04DB0AF01D5B2DDF00F9EAA3 /* WCProfileViewController.m in Sources */,
 				343D31A21C81E6C200D8FD0E /* DDAbstractDatabaseLogger.m in Sources */,
@@ -3191,6 +3241,7 @@
 				34B2C08D1C89D23A009DEED3 /* UIImage+WebP.m in Sources */,
 				345957141C95689500052923 /* MJPropertyKey.m in Sources */,
 				34B2C0861C89D23A009DEED3 /* SDWebImageDownloader.m in Sources */,
+				040A21461D6CA910002E0066 /* TabBar.m in Sources */,
 				34B2C08E1C89D23A009DEED3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				343D31A41C81E6C200D8FD0E /* DDFileLogger.m in Sources */,
 				343D31E01C82930500D8FD0E /* UIButton+WF.m in Sources */,
@@ -3200,6 +3251,7 @@
 				04F710EB1D61CE5E00C18F04 /* JMOtherLoginController.m in Sources */,
 				343D31931C81E6C200D8FD0E /* NSXMLElement+XEP_0203.m in Sources */,
 				343D31601C81E6C200D8FD0E /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
+				040A21421D6CA910002E0066 /* ListView.m in Sources */,
 				04DB0B021D5B358700F9EAA3 /* JMMaimCell.m in Sources */,
 				343D31961C81E6C200D8FD0E /* XMPPMessage+XEP_0224.m in Sources */,
 				345957191C95689500052923 /* NSObject+MJProperty.m in Sources */,
@@ -3207,6 +3259,7 @@
 				343D318A1C81E6C200D8FD0E /* XMPPMessage+XEP_0172.m in Sources */,
 				343D31711C81E6C200D8FD0E /* XMPPvCardTempTel.m in Sources */,
 				04DB0A9A1D5ACF5A00F9EAA3 /* Tool_FMDBGetDatabase.m in Sources */,
+				040A21411D6CA910002E0066 /* KeyBoardView.m in Sources */,
 				343D317C1C81E6C200D8FD0E /* XMPPSoftwareVersion.m in Sources */,
 				343D31331C81E6C200D8FD0E /* XMPPDigestMD5Authentication.m in Sources */,
 				343D31491C81E6C200D8FD0E /* XMPPRoster.xcdatamodel in Sources */,
@@ -3214,11 +3267,13 @@
 				343D31811C81E6C200D8FD0E /* XMPPCapsCoreDataStorageObject.m in Sources */,
 				343D319B1C81E6C200D8FD0E /* DDList.m in Sources */,
 				34B2C08F1C89D23A009DEED3 /* UIImageView+WebCache.m in Sources */,
+				040A212E1D6CA74B002E0066 /* InputImageView.m in Sources */,
 				343D31A81C81E6C200D8FD0E /* DispatchQueueLogFormatter.m in Sources */,
 				343D31E41C82930500D8FD0E /* UITextField+WF.m in Sources */,
 				343D31FA1C82E18E00D8FD0E /* WCLoginController.m in Sources */,
 				34B2C0881C89D23A009DEED3 /* SDWebImageManager.m in Sources */,
 				048643BD1D5C249B00190F72 /* QqCell.m in Sources */,
+				040A21441D6CA910002E0066 /* NSString+Emoji.m in Sources */,
 				343D313F1C81E6C200D8FD0E /* XMPPParser.m in Sources */,
 				34B2C05E1C89C7D7009DEED3 /* HttpTool.m in Sources */,
 				04DB0ABC1D5AE03D00F9EAA3 /* FMResultSet.m in Sources */,
@@ -3280,6 +3335,7 @@
 				343D31F31C82C8ED00D8FD0E /* WCNavigationController.m in Sources */,
 				343D316A1C81E6C200D8FD0E /* XMPPvCardTemp.m in Sources */,
 				343D31E11C82930500D8FD0E /* UIImage+WF.m in Sources */,
+				040A21451D6CA910002E0066 /* PageView.m in Sources */,
 				343D31511C81E6C200D8FD0E /* XMPPIQ+JabberRPC.m in Sources */,
 				04DB0AD51D5B2B9600F9EAA3 /* HeaderFooter.m in Sources */,
 				04F711201D63514900C18F04 /* LoginAndRegisterView.m in Sources */,

@@ -22,6 +22,7 @@
 
 @interface JMMessageController ()<XMPPStreamDelegate, TextInputViewDelegate>
 
+@property (nonatomic, weak) TextInputView *textView;
 @property (nonatomic, strong) JMMessageTableView *msgTable;
 @property (nonatomic, strong) HttpTool *httpTool;
 
@@ -40,6 +41,10 @@
     
     // 这里添加输入框
     [TextInputView initWithKeyBoardViewAndAddDelegate:self];
+    
+    TextInputView *textView = [TextInputView initWithKeyBoardViewAndAddDelegate:self];
+    [self.view addSubview:textView];
+    self.textView = textView;
     
     [self loadAllMessage];
     
