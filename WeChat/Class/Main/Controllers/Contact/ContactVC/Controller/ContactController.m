@@ -21,8 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     [self loadFriends2];    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 #pragma mark - 加载好友操作
@@ -76,7 +80,7 @@
     return [filemanage fileExistsAtPath:docsdir isDirectory:&isDir];
 }
 
-#pragma mark - NSFetchedResultsController  数据库发生改变会调用这个方法
+#pragma mark - NSFetchedResultsController 数据库发生改变会调用这个方法
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)resultController
 {
     // 首先拿到数据库所有元素

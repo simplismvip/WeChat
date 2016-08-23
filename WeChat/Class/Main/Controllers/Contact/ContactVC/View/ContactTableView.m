@@ -12,7 +12,7 @@
 #import "pinyin.h"
 #import "UIView+Extension.h"
 #import "HeaderFooter.h"
-#import "WCMyFriendsViewController.h"
+#import "JMFriendDetailController.h"
 
 @interface ContactTableView()<UITableViewDelegate, UITableViewDataSource, ContactTableViewDelegate>
 
@@ -75,26 +75,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
+{    
     NSMutableArray *rowArr = self.dataArray[indexPath.section];
-    UIStoryboard *sto = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    WCMyFriendsViewController *mfVC = [sto instantiateViewControllerWithIdentifier:@"SendAndDeleta"];
+    JMFriendDetailController *mfVC = [[JMFriendDetailController alloc] init];
     mfVC.cModel = rowArr[indexPath.row];
     [self.superViewController.navigationController pushViewController:mfVC animated:YES];
-    
-//    NSMutableArray *rowArr = self.dataArray[indexPath.section];
-//    ContactModel *model = rowArr[indexPath.row];
-//    
-//    UIStoryboard *sto = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    WCMyFriendsViewController *mfVC = [sto instantiateViewControllerWithIdentifier:@"SendAndDeleta"];
-//    
-//    mfVC.nickname = [NSString stringWithFormat:@"昵称:%@", model.nickname];
-//    mfVC.wechatNumber = [NSString stringWithFormat:@"微信号:%@", model.jidStr];
-//    XMPPJID *jid = [XMPPJID jidWithString:model.jidStr];
-//    mfVC.jid = jid;
-//    [self.superViewController.navigationController pushViewController:mfVC animated:YES];
 }
 
 #pragma mark -- headerView

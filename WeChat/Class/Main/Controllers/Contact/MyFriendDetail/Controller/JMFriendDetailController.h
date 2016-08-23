@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContactModel.h"
 
 @interface JMFriendDetailController : UIViewController
-
+@property (nonatomic, strong) ContactModel *cModel;
 @end

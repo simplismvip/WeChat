@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A21281D6C8AE5002E0066 /* JMDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21271D6C8AE5002E0066 /* JMDetailModel.m */; };
 		0486434C1D5C192900190F72 /* JMMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486434B1D5C192900190F72 /* JMMessageController.m */; };
 		048643BD1D5C249B00190F72 /* QqCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643BC1D5C249B00190F72 /* QqCell.m */; };
 		048643C21D5C24B400190F72 /* QqFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643BF1D5C24B400190F72 /* QqFrameModel.m */; };
@@ -273,7 +274,6 @@
 		3401454E1C90298C00267690 /* lxh_zhuanfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3401446E1C90298B00267690 /* lxh_zhuanfa@2x.png */; };
 		340A49991C93C10C00A17EA5 /* pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A49981C93C10C00A17EA5 /* pinyin.m */; };
 		341932161C8AD8030012E629 /* ImageThum.m in Sources */ = {isa = PBXBuildFile; fileRef = 341932151C8AD8030012E629 /* ImageThum.m */; };
-		341B958A1C86E0A500FAB4CC /* WCMyFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341B95891C86E0A500FAB4CC /* WCMyFriendsViewController.m */; };
 		34263AFE1C871FFE0068EAA9 /* WCAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34263AFD1C871FFE0068EAA9 /* WCAddViewController.m */; };
 		343D2FCB1C81E69600D8FD0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D2FCA1C81E69600D8FD0E /* main.m */; };
 		343D2FCE1C81E69600D8FD0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D2FCD1C81E69600D8FD0E /* AppDelegate.m */; };
@@ -458,6 +458,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040A21261D6C8AE5002E0066 /* JMDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDetailModel.h; sourceTree = "<group>"; };
+		040A21271D6C8AE5002E0066 /* JMDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDetailModel.m; sourceTree = "<group>"; };
 		0486434A1D5C192900190F72 /* JMMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMessageController.h; sourceTree = "<group>"; };
 		0486434B1D5C192900190F72 /* JMMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMessageController.m; sourceTree = "<group>"; };
 		048643BB1D5C249B00190F72 /* QqCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QqCell.h; sourceTree = "<group>"; };
@@ -765,8 +767,6 @@
 		340A49981C93C10C00A17EA5 /* pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinyin.m; sourceTree = "<group>"; };
 		341932141C8AD8030012E629 /* ImageThum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageThum.h; sourceTree = "<group>"; };
 		341932151C8AD8030012E629 /* ImageThum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageThum.m; sourceTree = "<group>"; };
-		341B95881C86E0A500FAB4CC /* WCMyFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCMyFriendsViewController.h; path = ../../WCMyFriendsViewController.h; sourceTree = "<group>"; };
-		341B95891C86E0A500FAB4CC /* WCMyFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCMyFriendsViewController.m; path = ../../WCMyFriendsViewController.m; sourceTree = "<group>"; };
 		34263AFC1C871FFE0068EAA9 /* WCAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCAddViewController.h; path = ../../WCAddViewController.h; sourceTree = "<group>"; };
 		34263AFD1C871FFE0068EAA9 /* WCAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCAddViewController.m; path = ../../WCAddViewController.m; sourceTree = "<group>"; };
 		343D2FC61C81E69600D8FD0E /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1260,6 +1260,8 @@
 		04DB0AD71D5B2CDB00F9EAA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				040A21261D6C8AE5002E0066 /* JMDetailModel.h */,
+				040A21271D6C8AE5002E0066 /* JMDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2801,8 +2803,6 @@
 				04DB0AD61D5B2CDB00F9EAA3 /* Controller */,
 				04DB0AD71D5B2CDB00F9EAA3 /* Model */,
 				04DB0AD81D5B2CDB00F9EAA3 /* View */,
-				341B95881C86E0A500FAB4CC /* WCMyFriendsViewController.h */,
-				341B95891C86E0A500FAB4CC /* WCMyFriendsViewController.m */,
 			);
 			path = MyFriendDetail;
 			sourceTree = "<group>";
@@ -3242,6 +3242,7 @@
 				343D31661C81E6C200D8FD0E /* XMPPvCardAvatarCoreDataStorageObject.m in Sources */,
 				343D31571C81E6C200D8FD0E /* XMPPRoom.xcdatamodeld in Sources */,
 				343D31A61C81E6C200D8FD0E /* DDTTYLogger.m in Sources */,
+				040A21281D6C8AE5002E0066 /* JMDetailModel.m in Sources */,
 				343D319F1C81E6C200D8FD0E /* XMPPSRVResolver.m in Sources */,
 				343D31501C81E6C200D8FD0E /* XMPPSystemInputActivityMonitor.m in Sources */,
 				048643C31D5C24B400190F72 /* QqModel.m in Sources */,
@@ -3272,7 +3273,6 @@
 				343D31531C81E6C200D8FD0E /* XMPPJabberRPCModule.m in Sources */,
 				343D317A1C81E6C200D8FD0E /* XMPPDateTimeProfiles.m in Sources */,
 				343D31781C81E6C200D8FD0E /* XMPPMessage+XEP_0066.m in Sources */,
-				341B958A1C86E0A500FAB4CC /* WCMyFriendsViewController.m in Sources */,
 				343D31EC1C82AA3300D8FD0E /* MBProgressHUD+HM.m in Sources */,
 				34B2C0871C89D23A009DEED3 /* SDWebImageDownloaderOperation.m in Sources */,
 				04DB0AEF1D5B2DDF00F9EAA3 /* WCMeViewController.m in Sources */,

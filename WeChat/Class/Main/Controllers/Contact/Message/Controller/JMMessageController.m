@@ -42,6 +42,8 @@
     [TextInputView initWithKeyBoardViewAndAddDelegate:self];
     
     [self loadAllMessage];
+    
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 // 加载聊天消息

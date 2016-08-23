@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    btnMessage,
+    btnDelete
+}btnType;
+
+@protocol JMFriendCellDelegate <NSObject>
+- (void)btnAction:(btnType)type;
+@end
+
 @interface JMFriendCell : UITableViewCell
-+ (instancetype)friendCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+@property (nonatomic, weak) id<JMFriendCellDelegate>delegate;
++ (JMFriendCell *)lrcCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath dataArr:(NSMutableArray *)dataArr;
 @end
