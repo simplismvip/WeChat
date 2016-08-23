@@ -277,7 +277,6 @@
 		34263AFE1C871FFE0068EAA9 /* WCAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34263AFD1C871FFE0068EAA9 /* WCAddViewController.m */; };
 		343D2FCB1C81E69600D8FD0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D2FCA1C81E69600D8FD0E /* main.m */; };
 		343D2FCE1C81E69600D8FD0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D2FCD1C81E69600D8FD0E /* AppDelegate.m */; };
-		343D2FD11C81E69600D8FD0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D2FD01C81E69600D8FD0E /* ViewController.m */; };
 		343D2FD41C81E69600D8FD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343D2FD21C81E69600D8FD0E /* Main.storyboard */; };
 		343D2FD91C81E69600D8FD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343D2FD71C81E69600D8FD0E /* LaunchScreen.storyboard */; };
 		343D31301C81E6C200D8FD0E /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 343D2FE61C81E6C100D8FD0E /* XMPPAnonymousAuthentication.m */; };
@@ -773,8 +772,6 @@
 		343D2FCA1C81E69600D8FD0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		343D2FCC1C81E69600D8FD0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
 		343D2FCD1C81E69600D8FD0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		343D2FCF1C81E69600D8FD0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		343D2FD01C81E69600D8FD0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		343D2FD31C81E69600D8FD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		343D2FD81C81E69600D8FD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		343D2FDA1C81E69600D8FD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1727,8 +1724,6 @@
 			isa = PBXGroup;
 			children = (
 				343D2FE01C81E6C100D8FD0E /* Class */,
-				343D2FCF1C81E69600D8FD0E /* ViewController.h */,
-				343D2FD01C81E69600D8FD0E /* ViewController.m */,
 				3459579A1C96AF7200052923 /* Assets.xcassets */,
 				343D2FD71C81E69600D8FD0E /* LaunchScreen.storyboard */,
 				343D2FDA1C81E69600D8FD0E /* Info.plist */,
@@ -3139,7 +3134,6 @@
 				343D31891C81E6C200D8FD0E /* XMPPvCardAvatarModule.m in Sources */,
 				343D31671C81E6C200D8FD0E /* XMPPvCardCoreDataStorage.m in Sources */,
 				343D31611C81E6C200D8FD0E /* XMPPRoomOccupantMemoryStorageObject.m in Sources */,
-				343D2FD11C81E69600D8FD0E /* ViewController.m in Sources */,
 				340A49991C93C10C00A17EA5 /* pinyin.m in Sources */,
 				34B2C0851C89D23A009DEED3 /* SDWebImageDecoder.m in Sources */,
 				343D31801C81E6C200D8FD0E /* XMPPCapabilitiesCoreDataStorage.m in Sources */,
