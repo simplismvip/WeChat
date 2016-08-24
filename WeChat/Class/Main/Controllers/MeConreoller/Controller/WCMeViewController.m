@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "XMPPvCardTemp.h"
 #import "WCUserInfo.h"
+#import "SetViewController.h"
 
 @interface WCMeViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nickLabel;
@@ -49,7 +50,14 @@
     self.numberLabel.text = [NSString stringWithFormat:@"微信号:%@", [WCUserInfo sharedWCUserInfo].user];
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 3) {
+        
+        SetViewController *setting = [[SetViewController alloc] init];
+        [self.navigationController pushViewController:setting animated:YES];
+    }
+}
 
 - (IBAction)logout:(id)sender {
     

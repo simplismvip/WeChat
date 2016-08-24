@@ -17,6 +17,8 @@
 		040A21451D6CA910002E0066 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A213C1D6CA910002E0066 /* PageView.m */; };
 		040A21461D6CA910002E0066 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A213E1D6CA910002E0066 /* TabBar.m */; };
 		040A21471D6CA910002E0066 /* tabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21401D6CA910002E0066 /* tabBarButton.m */; };
+		040A214A1D6CBE3C002E0066 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A21491D6CBE3C002E0066 /* SetViewController.m */; };
+		040A214D1D6CBE4A002E0066 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040A214C1D6CBE4A002E0066 /* SettingCell.m */; };
 		0486434C1D5C192900190F72 /* JMMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486434B1D5C192900190F72 /* JMMessageController.m */; };
 		048643BD1D5C249B00190F72 /* QqCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643BC1D5C249B00190F72 /* QqCell.m */; };
 		048643C21D5C24B400190F72 /* QqFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048643BF1D5C24B400190F72 /* QqFrameModel.m */; };
@@ -485,6 +487,10 @@
 		040A213E1D6CA910002E0066 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
 		040A213F1D6CA910002E0066 /* tabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabBarButton.h; sourceTree = "<group>"; };
 		040A21401D6CA910002E0066 /* tabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabBarButton.m; sourceTree = "<group>"; };
+		040A21481D6CBE3C002E0066 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		040A21491D6CBE3C002E0066 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		040A214B1D6CBE4A002E0066 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingCell.h; path = ../../SettingCell.h; sourceTree = "<group>"; };
+		040A214C1D6CBE4A002E0066 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingCell.m; path = ../../SettingCell.m; sourceTree = "<group>"; };
 		0486434A1D5C192900190F72 /* JMMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMessageController.h; sourceTree = "<group>"; };
 		0486434B1D5C192900190F72 /* JMMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMessageController.m; sourceTree = "<group>"; };
 		048643BB1D5C249B00190F72 /* QqCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QqCell.h; sourceTree = "<group>"; };
@@ -1406,6 +1412,8 @@
 		04DB0AE51D5B2DDF00F9EAA3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				040A21481D6CBE3C002E0066 /* SetViewController.h */,
+				040A21491D6CBE3C002E0066 /* SetViewController.m */,
 				04DB0AE61D5B2DDF00F9EAA3 /* WCEditProfireViewController.h */,
 				04DB0AE71D5B2DDF00F9EAA3 /* WCEditProfireViewController.m */,
 				04DB0AE81D5B2DDF00F9EAA3 /* WCMeViewController.h */,
@@ -1426,6 +1434,8 @@
 		04DB0AED1D5B2DDF00F9EAA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				040A214B1D6CBE4A002E0066 /* SettingCell.h */,
+				040A214C1D6CBE4A002E0066 /* SettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3278,6 +3288,7 @@
 				34B2C05E1C89C7D7009DEED3 /* HttpTool.m in Sources */,
 				04DB0ABC1D5AE03D00F9EAA3 /* FMResultSet.m in Sources */,
 				345957181C95689500052923 /* NSObject+MJKeyValue.m in Sources */,
+				040A214D1D6CBE4A002E0066 /* SettingCell.m in Sources */,
 				343D31E21C82930500D8FD0E /* UIScreen+WF.m in Sources */,
 				343D31411C81E6C200D8FD0E /* XMPPStream.m in Sources */,
 				343D31341C81E6C200D8FD0E /* XMPPPlainAuthentication.m in Sources */,
@@ -3324,6 +3335,7 @@
 				343D31781C81E6C200D8FD0E /* XMPPMessage+XEP_0066.m in Sources */,
 				343D31EC1C82AA3300D8FD0E /* MBProgressHUD+HM.m in Sources */,
 				34B2C0871C89D23A009DEED3 /* SDWebImageDownloaderOperation.m in Sources */,
+				040A214A1D6CBE3C002E0066 /* SetViewController.m in Sources */,
 				04DB0AEF1D5B2DDF00F9EAA3 /* WCMeViewController.m in Sources */,
 				343D313B1C81E6C200D8FD0E /* XMPPIQ.m in Sources */,
 				343D31741C81E6C200D8FD0E /* XMPPIQ+XEP_0060.m in Sources */,

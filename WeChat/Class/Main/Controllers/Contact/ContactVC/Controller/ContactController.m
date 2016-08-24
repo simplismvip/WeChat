@@ -134,6 +134,7 @@
     NSArray *he = [ContactModel findAll];
     NSMutableArray *outArray = [JMArrayHelper getSubArrayFromSuperArray:he];
     NSMutableArray *sortArray = [JMArrayHelper sortArray:outArray];
+    
     self.base = [ContactTableView initContactTableView:self.view dataArray:sortArray addDelegate:self];
 }
 
