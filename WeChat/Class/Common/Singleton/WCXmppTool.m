@@ -127,7 +127,7 @@ singleton_implementation(WCXmppTool)
     // 登录到相应账户需要设置JID(账户名)和主机名, 端口号
     XMPPJID *jid = [XMPPJID jidWithUser:user domain:@"tonyzhao.local" resource:@"iphone"];
     _xmppStream.myJID = jid;
-    _xmppStream.hostName = @"192.168.1.107";
+    _xmppStream.hostName = @"192.168.1.107"; // @"192.168.1.105";
     _xmppStream.hostPort = 5222;
     
     NSError *err = nil;

@@ -71,40 +71,45 @@
     }
 }
 
-- (BOOL)isExistInFields
-{
-    NSString *docsdir = [NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    docsdir = [docsdir stringByAppendingPathComponent:@"Contact/contact.sqlite"];
-    NSFileManager *filemanage = [NSFileManager defaultManager];
-    BOOL isDir;
-    return [filemanage fileExistsAtPath:docsdir isDirectory:&isDir];
-}
-
 #pragma mark - NSFetchedResultsController 数据库发生改变会调用这个方法
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)resultController
 {
-    // 首先拿到数据库所有元素
-    NSArray *he = [ContactModel findAll];
+    NSArray *findModel = [ContactModel findAll];
+    NSMutableArray *friendArr = [resultController.fetchedObjects mutableCopy];
     
-    // 着这里拿到更新后的数据, 将更新后的数据添加到数据库
-    for (XMPPUserCoreDataStorageObject *friend in resultController.fetchedObjects) {
-        for (ContactModel *cModel in he) {
+    for (int i = 0; i < findModel.count; i ++) {
+        
+        ContactModel *cModel = findModel[i];
+        
+        for (int j = 0; j < friendArr.count; j ++) {
             
-            // 遍历数据库, 如果这个jid和数据库的元素都不相同, 则添加, 只要找到一个相同就停止
-            if ([friend.jidStr isEqualToString:cModel.jidStr]) {return;}
+            XMPPUserCoreDataStorageObject *friend = friendArr[j];
+            
+            if ([friend.jidStr isEqualToString:cModel.jidStr]) {
+                
+                [friendArr removeObject:friend];
+            }
         }
+        
+    }
+    
+    
+    NSLog(@"friends = %@", friendArr);
+    
+    if (friendArr.count == 0) {return;}
+    for (XMPPUserCoreDataStorageObject *friend in friendArr) {
         
         // 如果能够来到这里说明没有相同的元素则添加
         ContactModel *cModel = [[ContactModel alloc] init];
         cModel.nickname = friend.nickname;
         cModel.weChatNumber = friend.jid.user;
         cModel.jidStr = friend.jidStr;
-        // model.photo = friend.photo;
         cModel.sectionNum = [friend.sectionNum stringValue];
         [cModel save];
-        
-        // 更新UI界面
     }
+    
+    // 更新UI界面
+    [self refrash];
 }
 
 // 先把用户名转化为字母排序添加到数组, 在把数组返回
@@ -127,6 +132,17 @@
     
 }
 
+- (void)refrash
+{
+    // 2> 将数据库中的数据取出来
+    NSArray *he = [ContactModel findAll];
+    NSMutableArray *outArray = [JMArrayHelper getSubArrayFromSuperArray:he];
+    NSMutableArray *sortArray = [JMArrayHelper sortArray:outArray];
+    [self.base refrashByArray:sortArray];
+    
+    NSLog(@"刷新界面");
+}
+
 // 加载展示数据
 - (void)readContactFromSQL
 {
@@ -134,8 +150,9 @@
     NSArray *he = [ContactModel findAll];
     NSMutableArray *outArray = [JMArrayHelper getSubArrayFromSuperArray:he];
     NSMutableArray *sortArray = [JMArrayHelper sortArray:outArray];
-    
     self.base = [ContactTableView initContactTableView:self.view dataArray:sortArray addDelegate:self];
+    
+    NSLog(@"%@", he);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class ContactModel;
 @protocol ContactTableViewDelegate <NSObject>
 @optional
 - (void)historyUrl:(NSURL *)url;
@@ -18,5 +19,5 @@
 
 @property (nonatomic, weak) id <ContactTableViewDelegate>contactDelegate;
 + (instancetype)initContactTableView:(UIView *)view dataArray:(NSMutableArray *)dataArray addDelegate:(id)conDelegate;
-//- (void)relodData;
+- (void)refrashByArray:(NSMutableArray *)array;
 @end

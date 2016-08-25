@@ -159,10 +159,22 @@
     return base;
 }
 
-//- (void)relodData
-//{
-//    [self reloadData];
-//}
+// 刷新界面
+- (void)refrashByArray:(NSMutableArray *)array
+{
+    [self.indexArr removeAllObjects];
+    self.dataArray = array;
+    
+    // 侧边索引栏
+    for (NSMutableArray *indexArr in array) {
+        
+        ContactModel *model = indexArr.firstObject;
+        NSString *name = [model.nickname uppercasePinYinFirstLetter];
+        [self.indexArr addObject:name];
+    }
+    
+    [self reloadData];
+}
 
 // 通过View获取控制器方法
 + (UIViewController *)findViewController:(UIView *)sourceView
